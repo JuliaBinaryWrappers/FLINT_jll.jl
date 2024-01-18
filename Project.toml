@@ -1,6 +1,6 @@
 name = "FLINT_jll"
 uuid = "e134572f-a0d5-539d-bddf-3cad8db41a82"
-version = "300.0.0+0"
+version = "200.900.8+0"
 
 [deps]
 JLLWrappers = "692b3bcd-3c85-4b1f-b108-f13ce0eb3210"
@@ -13,3 +13,5 @@ Artifacts = "56f22d72-fd6d-98f1-02f0-08ddc0907c33"
 [compat]
 JLLWrappers = "1.2.0"
 julia = "1.6"
+Libdl = "1"
+Artifacts = "1"
