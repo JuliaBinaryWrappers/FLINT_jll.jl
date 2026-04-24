@@ -5,12 +5,12 @@ using GMP_jll
 using MPFR_jll
 using OpenBLAS32_jll
 JLLWrappers.@generate_wrapper_header("FLINT")
-JLLWrappers.@declare_library_product(libflint, "@rpath/libflint.22.0.dylib")
+JLLWrappers.@declare_library_product(libflint, "@rpath/libflint.23.0.dylib")
 function __init__()
     JLLWrappers.@generate_init_header(GMP_jll, MPFR_jll, OpenBLAS32_jll)
     JLLWrappers.@init_library_product(
         libflint,
-        "lib/libflint.22.0.dylib",
+        "lib/libflint.23.0.dylib",
         RTLD_LAZY | RTLD_DEEPBIND,
     )
 
